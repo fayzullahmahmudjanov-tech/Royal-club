@@ -1,0 +1,532 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080d16;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.website {
+  overflow: hidden;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 85px;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0b1220;
+  border-bottom: 1px solid #1c3048;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.wing-logo {
+  color: #64cfff;
+  font-size: 35px;
+}
+
+.blue {
+  color: #64cfff;
+}
+
+.navbar nav {
+  display: flex;
+  gap: 35px;
+}
+
+.navbar nav a {
+  color: #b4c0d0;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover {
+  color: #64cfff;
+}
+
+.nav-button {
+  background: #64cfff;
+  color: #07111d;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 570px;
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background:
+    radial-gradient(ellipse at 80% 50%, #123b5c 0%, transparent 45%),
+    #080d16;
+}
+
+.hero-content {
+  max-width: 580px;
+}
+
+.small-title {
+  color: #64cfff;
+  font-size: 12px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(45px, 7vw, 85px);
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.hero h1 span {
+  color: #64cfff;
+  text-shadow: 0 0 25px #298acb;
+}
+
+.hero-description {
+  color: #a8b5c7;
+  line-height: 1.9;
+  margin: 25px 0 35px;
+  max-width: 440px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 15px 28px;
+  border-radius: 5px;
+  font-weight: 700;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.primary-button {
+  background: #64cfff;
+  color: #06111e;
+}
+
+.primary-button:hover {
+  background: white;
+  transform: translateY(-3px);
+}
+
+.secondary-button {
+  border: 1px solid #64cfff;
+  color: #64cfff;
+}
+
+.secondary-button:hover {
+  background: #64cfff;
+  color: #06111e;
+}
+
+/* LOGO DECORATION */
+
+.hero-decoration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.glow-circle {
+  width: 300px;
+  height: 300px;
+  border: 2px solid #64cfff;
+  border-radius: 50%;
+  box-shadow:
+    0 0 30px #1d8acb,
+    inset 0 0 30px #164b71;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-large {
+  color: #64cfff;
+  font-size: 110px;
+  text-shadow: 0 0 30px #64cfff;
+}
+
+.glow-circle p {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.glow-circle span {
+  color: #64cfff;
+  font-size: 10px;
+  letter-spacing: 4px;
+  margin-top: 12px;
+}
+
+/* SECTION HEADINGS */
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.section-heading > p {
+  color: #64cfff;
+  letter-spacing: 4px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.section-heading h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(25px, 4vw, 38px);
+}
+
+.section-heading > span {
+  display: block;
+  color: #94a3b8;
+  margin-top: 15px;
+}
+
+/* FEATURES */
+
+.features {
+  padding: 90px 10%;
+  background: #0b1220;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: #111e30;
+  padding: 35px 25px;
+  border: 1px solid #203b54;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.feature-card:hover {
+  border-color: #64cfff;
+  transform: translateY(-7px);
+}
+
+.feature-icon {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+  font-size: 19px;
+}
+
+.feature-card p {
+  color: #94a3b8;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* PRICES */
+
+.prices {
+  padding: 100px 10%;
+  background: #080d16;
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.price-card {
+  background: #111e30;
+  border: 1px solid #253b50;
+  border-radius: 10px;
+  text-align: center;
+  padding: 45px 20px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.price-card:hover {
+  transform: translateY(-8px);
+  border-color: #64cfff;
+}
+
+.price-card h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.price {
+  color: #64cfff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.price small {
+  font-size: 12px;
+}
+
+.price-card > p {
+  color: #94a3b8;
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.popular {
+  border: 2px solid #64cfff;
+  box-shadow: 0 0 20px #123b5c;
+}
+
+.popular-label {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #64cfff;
+  color: #06111e;
+  padding: 7px 20px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* WORKING HOURS */
+
+.hours {
+  background: #10253b;
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.hours h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.hours p {
+  color: #a9bdd0;
+}
+
+.hours-box {
+  background: #0a1422;
+  border: 1px solid #64cfff;
+  border-radius: 10px;
+  padding: 35px 45px;
+  text-align: center;
+}
+
+.hours-box span {
+  color: #94a3b8;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.hours-box h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #64cfff;
+  font-size: 30px;
+  margin: 18px 0;
+}
+
+.hours-box .open-status {
+  color: #64cfff;
+  font-size: 11px;
+}
+
+/* LOCATION */
+
+.location {
+  padding: 100px 10%;
+  background: #080d16;
+}
+
+.location-box {
+  background: #111e30;
+  border: 1px solid #263d53;
+  border-radius: 12px;
+  max-width: 600px;
+  margin: auto;
+  padding: 45px 20px;
+  text-align: center;
+}
+
+.location-icon {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.location-box h3 {
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 15px;
+}
+
+.location-box p {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #0b1220;
+  border-top: 1px solid #20364c;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footer-brand {
+  color: #64cfff;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 800;
+  font-size: 23px;
+}
+
+footer p {
+  color: #94a3b8;
+  font-size: 11px;
+  letter-spacing: 4px;
+  margin: 12px 0 25px;
+}
+
+footer span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+    height: auto;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .navbar nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .navbar nav a {
+    font-size: 12px;
+  }
+
+  .brand {
+    font-size: 15px;
+  }
+
+  .nav-button {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 65px 7%;
+    flex-direction: column;
+    text-align: center;
+    gap: 55px;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .glow-circle {
+    width: 230px;
+    height: 230px;
+  }
+
+  .logo-large {
+    font-size: 80px;
+  }
+
+  .feature-grid,
+  .price-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .features,
+  .prices,
+  .location {
+    padding: 70px 7%;
+  }
+
+  .hours {
+    flex-direction: column;
+    text-align: center;
+    padding: 65px 7%;
+  }
+
+  .hours-box {
+    width: 100%;
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar nav {
+    gap: 12px;
+  }
+
+  .navbar nav a {
+    font-size: 11px;
+  }
+
+  .hours-box h3 {
+    font-size: 24px;
+  }
+}
